@@ -113,10 +113,10 @@ class Data_Reader(object):
     
     
     #Returns a clean dataframe for feeding to the logistic regression model
-    def clean_df(self):
-        raw_df = pd.read_excel(self.filename)
-        #Determining columns with all NaNs
-        colnames = raw_df.columns[pd.isnull(raw_df).all()].tolist()
-        cleandf = raw_df[raw_df.columns[~raw_df.columns.str.contains('Unnamed:')]]
-        return cleandf
+    #def clean_df(self):
+    #    raw_df = pd.read_excel(self.filename)
+    #    #Determining columns with all NaNs
+    #    colnames = raw_df.columns[pd.isnull(raw_df).all()].tolist()
+    #    cleandf = raw_df[raw_df.columns[~raw_df.columns.str.contains('Unnamed:')]]
+    #    return cleandf
  
